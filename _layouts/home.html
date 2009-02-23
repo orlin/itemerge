@@ -1,0 +1,23 @@
+{% include begin.liquid %}
+
+	<div id="left">
+	  {{ content }}
+	  <div class="item">
+	    <p>
+	      {% for post in site.posts %} 
+	        <span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}">{{ post.title }}</a><br/>
+	      {% endfor %}
+	    </p>
+	    <p>&nbsp;</p>
+	  </div>
+	</div>
+
+	<div id="right2">
+		<h2>contact</h2>
+		<ul>
+			<li><a href="http://orlin.mp">orlin m bozhinov</a></li>
+			<li><a href="http://soundsapiens.com">soundsapiens.com</a></li>
+		</ul>
+	</div>
+
+{% include endin.liquid %}
