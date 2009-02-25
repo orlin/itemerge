@@ -5,7 +5,7 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>ITeMerge</title>
- <link href="http://itemerge.com/atom.xml" rel="self"/>
+ <link href="http://monad.github.com/atom.xml" rel="self"/>
  <link href="http://itemerge.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://itemerge.com/</id>
@@ -17,7 +17,7 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://itemerge.com{{ post.url }}"/>
+   <link href="http://monad.github.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://itemerge.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
